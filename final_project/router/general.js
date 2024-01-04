@@ -8,7 +8,7 @@ public_users.post("/register", (req,res) => {
   //Write your code here
     let username = req.body.username;
     let password = req.body.password;
-
+    
     if(username != "" & password != ""){
         let userswithsamename = users.filter((user)=>{
             return user.username === username
